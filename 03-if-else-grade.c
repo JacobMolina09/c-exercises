@@ -19,6 +19,9 @@ int main(void) {
     scanf("%d", &score);
 
     // Insert your if/else-if/else chain here.
+if(score >= 90){
+    printf("Score &d: A- Excellent\n", score);
+}
 
     return 0;
 }

@@ -26,10 +26,31 @@ int main(void) {
     int count = 0;
 
     // TODO: ask for count and validate it is between 1 and MAX_NUMBERS.
+printf("How mant numbers (1-10)? ");
+scanf("%d", &count);
 
+while(count < 1 || count > MAX_NUMBERS){
+    printf("Error: enter a value between 1-10: ");
+    scanf("%d", &count);
+}
     // TODO: read values into the array using a loop.
-
+    int index = 0;
+    while(count > 0){
+    printf("enter value: ");
+    scanf("%d", &numbers[index]);
+    index++;
+    count--;
+}
     // TODO: compute sum and average, then print them.
+int sum = 0;
+int i =0;
 
+while(i < index){
+    sum+= numbers[1];
+    i++;
+}
+printf("the sum is: %d\n", sum);
+float average = (float) sum / index;
+printf("the average is: %f\n", average);
     return 0;
 }

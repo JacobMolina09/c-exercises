@@ -27,6 +27,8 @@ int main(void) {
     scanf("%d", &second);
 
     // TODO: call min_of_two and print the result to the screen.
+    int min = min_of_two(first, second);
+    printf("The smaller number is %d\n", min);
 
     return 0;
 }

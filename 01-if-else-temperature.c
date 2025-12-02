@@ -21,6 +21,14 @@ int main(void) {
     scanf("%d", &temperature);
 
     // Your if/else statements go below this line.
-
+if(temperature<= 32){
+    printf("It is freezing\n");
+}
+if(temperature >= 33 && temperature <= 75){
+    printf("Mild\n");
+}
+if(temperature >= 75){
+    printf("Hot\n");
+}
     return 0;
 }

@@ -22,9 +22,19 @@ int main(void) {
     int values[SIZE];
 
     // TODO: fill the array with user input using a for loop.
-
+     int i = 0;
+    for(int i = 0; i < SIZE; i++) {
+    printf("enter number %d: ", i);
+    scanf("%d", &values[i]);
+    }
     // TODO: find the largest number and its index using another loop.
-
+    int max= values[i];
+    for(int i = 0; i < SIZE; i++){
+        if(values[i] > max){
+            max = values[i];
+        }  
+        printf(" the maximum is %d\n", max);
+    }
     // TODO: print the results in a clear sentence.
 
     return 0;
